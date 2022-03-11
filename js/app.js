@@ -16,6 +16,7 @@ const isLiked = (id) => {
 };
 
 const addToLiked = (id) => {
+  // araay.push() is right
   likedPostsId.push(id);
   showPosts(posts);
 };
@@ -52,6 +53,8 @@ const switchTab = (id) => {
 
 const createPost = (post) => {
   const image = post.image;
+  // create user image
+  const user = post.userImage;
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
@@ -62,7 +65,7 @@ const createPost = (post) => {
                     target="_blank"
                     class="post__avatar"
                   >
-                    <img src="${image}" alt="User Picture" />
+                    <img src="${user}" alt="User Picture" />
                   </a>
                   <a href="#" class="post__user">phero</a>
                 </div>
