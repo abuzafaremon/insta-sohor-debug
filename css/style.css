@@ -50,7 +50,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin: auto;
-  align-items: center;
   justify-content: center;
 }
 
@@ -237,7 +236,11 @@ img {
   margin: 10px 0;
   color: gray;
 }
-
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: #F8F9FA;
+}
 #liked{
   display: none;
 }
